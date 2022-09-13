@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Montserrat", sans-serif;
+}
+.wyswietlacz {
+  grid-area: wyswietlacz;
+  padding-bottom: 50px;
+  border-bottom: 1px solid black;
+}
+
+.kalkulator {
+  border: 1px solid black;
+  /* border-radius: 5%; */
+  width: 400px;
+  height: 600px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-template-areas:
+    "wyswietlacz wyswietlacz wyswietlacz wyswietlacz"
+    "siedem osiem dziewiec ce"
+    "cztery piec szesc dzielenie"
+    "jeden dwa trzy mnozenie"
+    "zeroo dodawanie odejmowanie rownosc";
+}
+
+button {
+  border: none;
+  font-family: "Montserrat", sans-serif;
+}
+
+.cyfry:hover {
+  background-color: #d7e1e9;
+  transition: all 0.5s ease;
+}
+
+.jeden {
+  grid-area: jeden;
+}
+.dwa {
+  grid-area: dwa;
+}
+.trzy {
+  grid-area: trzy;
+}
+.cztery {
+  grid-area: cztery;
+}
+.piec {
+  grid-area: piec;
+}
+.szesc {
+  grid-area: szesc;
+}
+.siedem {
+  grid-area: siedem;
+}
+.osiem {
+  grid-area: osiem;
+}
+.dziewiec {
+  grid-area: dziewiec;
+}
+.zero {
+  grid-area: zeroo;
+}
+.rownosc {
+  grid-area: rownosc;
+  background-color: #ffc11e;
+}
+.rownosc:hover {
+  background-color: #ffd600;
+  transition: all 0.5 ease;
+}
+.ce {
+  grid-area: ce;
+  background-color: #1771f1;
+}
+.ce:hover {
+  background-color: #5199ff;
+  transition: all 0.5 ease;
+}
+.dzielenie {
+  grid-area: dzielenie;
+}
+.mnozenie {
+  grid-area: mnozenie;
+}
+.odejmowanie {
+  grid-area: odejmowanie;
+}
+
+.dodawanie {
+  grid-area: dodawanie;
+}
+
+.bold {
+  font-size: 110%;
+}
+.grey {
+  background-color: #e6e7e8;
+}
+.grey:hover {
+  background-color: #d1d3d4;
+  transition: all 0.5 ease;
+}
